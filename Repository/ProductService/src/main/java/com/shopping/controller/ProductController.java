@@ -23,7 +23,9 @@ public class ProductController {
 	@PostMapping("/saveProduct")
 	public ResponseEntity<Product> saveData(@RequestBody Product product) {
 
-	    Product pro = proService.saveDetails(product);
+//Postmapping API Created
+		
+		Product pro = proService.saveDetails(product); 
 	    return new ResponseEntity<>(pro, HttpStatus.CREATED);
 	}
 	
